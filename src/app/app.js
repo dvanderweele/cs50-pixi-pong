@@ -1,6 +1,4 @@
 import * as PIXI from "pixi.js";
-import logoGlitch from "./logo-glitch.png";
-import { looper } from "./looper";
 
 export const run = () => {
   let app;
@@ -95,25 +93,10 @@ export const run = () => {
     let a = 0;
 
     const gameloop = dt => {
-      if (keys["ArrowLeft"]) {
-        a = a < aupper ? a + 0.01 : a;
-        v = v < vupper ? v + a : v;
-      } else if (keys["ArrowRight"]) {
-        a = a > alower ? a - 0.01 : a;
-        v = v > vlower ? v + a : v;
+      if (keys["ArrowUp"]) {
+      } else if (keys["ArrowDown"]) {
       } else {
-        if (a > 0) {
-          a -= 0.01;
-        } else if (a < 0) {
-          a += 0.01;
-        }
-        if (v > 0) {
-          v -= 0.01;
-        } else if (v < 0) {
-          v += 0.01;
-        }
       }
-      logo.rotation += v * dt;
     };
 
     app.ticker.add(gameloop);

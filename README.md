@@ -1,6 +1,3 @@
-# Webpack Boilerplate
+# CS50/GD50 Pong, but in PixiJS.
 
-A simple webpack boilerplate with pixi.js support.
-
-- npm start for development
-- npm run build for production
+An adaptation of Harvard's CS50/GD50 Pong project from their YouTube playlist, but in JavaScript with PixiJS instead of Lua and Love2D. This is just a personal learning project, but you can do whatever you want with it.
